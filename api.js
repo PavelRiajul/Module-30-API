@@ -11,5 +11,8 @@ function loadUsers(){
 function post(){
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response =>response.json())
-    .then(json => console.log(json))
+    .then(json => displayUsers(json))
+}
+function displayUsers(json){
+    console.log(json)
 }
